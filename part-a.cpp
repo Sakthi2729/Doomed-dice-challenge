@@ -47,8 +47,7 @@ int main() {
     cout << "\nProbability of Possible Sums:" << endl;
     for (int sum_value = 2; sum_value <= 12; sum_value++) {
         int occurrences = total_occurrences[sum_value];
-        int  probability = (occurrences) / total_combinations;
-        cout << "Probability sum of " << sum_value << " is " << occurrences << "/" << total_combinations << endl;
+     cout << "Probability sum of " << sum_value << " is " << occurrences << "/" << total_combinations << endl;
     }
 
     return 0;
