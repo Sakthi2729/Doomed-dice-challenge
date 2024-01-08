@@ -54,7 +54,7 @@ void transform(const vector<int>& die_a, const vector<int>& die_b) {
     vector<vector<int>> combo2;
     dice_b_combo(elements2, length, start, current, combo2);
 
-    vector<double> psum = {0, 1.0 / 36, 2.0 / 36, 3.0 / 36, 4.0 / 36, 5.0 / 36, 6.0 / 36, 5.0 / 36, 4.0 / 36, 3.0 / 36, 2.0 / 36, 1.0 / 36};
+    vector<double> psum = probsum(die_a,die_b);
 
     bool flag = false;
     for (const auto& i : combo1) {
