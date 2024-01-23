@@ -28,15 +28,6 @@ int main() {
     // Part 3: Probability of Sums
     total_combinations = 6 * 6;
 
-    // Count occurrences of each sum
-    vector<int> sum_counts(12, 0);
-
-    for (int i = 1; i <= 6; ++i) {
-        for (int j = 1; j <= 6; ++j) {
-            sum_counts[i + j - 2]++;
-        }
-    }
-
     unordered_map<int, int> total_occurrences;
     for (int i = 0; i < 6; i++) {
         for (int j = 0; j < 6; j++) {
